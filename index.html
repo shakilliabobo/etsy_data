@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Etsy Data</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      Parsing Etsy Data
+    </div>
+
+    <div class="item">
+      <div class="item__question">
+        1. What is the average price of all items?
+      </div>
+      <div id="answer-1" class="item__answer" />
+    </div>
+    <div class="item">
+      <div class="item__question">
+        2. Display a list of all of the item titles.
+      </div>
+      <div id="answer-2" class="item__answer" />
+    </div>
+    <div class="item">
+      <div class="item__question">
+        3. Which items cost between $14.00 and $18.00?
+      </div>
+      <div id="answer-3" class="item__answer" />
+    </div>
+    <div class="item">
+      <div class="item__question">
+        4. Which item has a "GBP" currency code?
+      </div>
+      <div id="answer-4" class="item__answer" />
+    </div>
+  </div>
+  <div class="item">
+    <div class="item__question">
+      5. Display a list of all items which are made of wood.
+    </div>
+    <div id="answer-5" class="item__answer" />
+  </div>
+  <div class="item">
+    <div class="item__question">
+      6. How many items were made by their sellers?
+    </div>
+    <div id="answer-6" class="item__answer" />
+  </div>
+
+  <!-- Load in Etsy Data as a global variable "data" -->
+  <script src="data.js"></script>
+
+  <!-- All of the script:src references to our problems -->
+  <script src="1-average.js"></script>
+  <script src="2-titles.js"></script>
+  <script src="3-between.js"></script>
+  <script src="4-GBP.js"></script>
+  <script src="5-wood.js"></script>
+  <script src="6-sellers.js"></script>
+</body>
+</html>
