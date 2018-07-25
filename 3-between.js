@@ -17,7 +17,9 @@ function findPrice(){
 //const costs = data.filter()
 const costs = data.filter(findPrice);
 
-console.log(costs);
+itemsBetween.push(costs);
+
+console.log(itemsBetween);
 
 // Resources:
 // - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
