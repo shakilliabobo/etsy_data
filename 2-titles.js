@@ -4,7 +4,17 @@
 // You should use .map to:
 // 1. Update the array 'itemsTitles' with Array.map to only return the `title` of each item.
 const itemsTitles = []
+const addingTitles = data.map(function(x){
+  return x.title
+});
 
+itemsTitles.push(addingTitles);
+
+console.log(itemsTitles)
+// for (let i = 0; i < data.length; i++){
+//   itemsTitles.push(data[i].title)
+//   console.log(itemsTitles)
+// }
 
 
 // Resources:
