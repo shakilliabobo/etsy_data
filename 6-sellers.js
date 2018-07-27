@@ -2,7 +2,9 @@
 // How many items were made by their sellers?
 
 // You should use Array.filter to create a new array called 'sellerMade' that only contains items that were created by the seller. (Look for the `who_made` property)
-const sellerMade = []
+const sellerMade = data.filter(function(x){
+  return x.who_made === "i_did";
+});
 
 
 // Resources:

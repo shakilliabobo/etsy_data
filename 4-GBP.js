@@ -2,7 +2,9 @@
 // Which item has a GBP currency code?
 
 // 1. You should use the Array.find() method to find the only object in the array with a `currency_code` property of GBP
-const gbpCurrency = {}
+const gbpCurrency = data.find(function(x){
+  return x.currency_code === "GBP";
+});
 
 
 // Resources:
